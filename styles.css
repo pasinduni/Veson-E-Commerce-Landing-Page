@@ -1,0 +1,501 @@
+body {
+    color: black;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.veson-logo {
+    font-size: 40px;
+    color: #000000;
+}
+
+.btn-outline-secondary {
+    border-color: #000;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+.hero-section {
+    padding: 30px;
+
+    .hero-content {
+        background: linear-gradient(to right, #f2f2f2, #b6aab1);
+        border-radius: 40px;
+        padding-top: 50px;
+    }
+
+    .hero-text {
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .card-style {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10 30;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .btn {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    span {
+        padding-left: 22px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    button {
+        color: #fff;
+        margin-left: 22px;
+        border: 1px solid #fff;
+        transform: rotate(-40deg);
+    }
+
+    button:hover {
+        color: #fff;
+    }
+
+    .hero-image {
+        flex: 1
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: 400px;
+        padding-left: 7rem;
+    }
+}
+
+.browse-section {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.browse-section p {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+}
+
+.short-line {
+    display: inline-block;
+    width: 8rem;
+    height: 1px;
+    background-color: black;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.products-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.products-header .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.products-header .buttons button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.products-header .buttons button img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+/* Products Section */
+.products {
+    .card {
+        box-shadow: none;
+        border: none;
+        position: relative;
+    }
+
+    .card-img-top-wrapper {
+        position: relative;
+    }
+
+    .card-img-top {
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .card-hover-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+    }
+
+    .card-hover-overlay button {
+        background-color: transparent;
+        color: #ffffff;
+    }
+
+    .card:hover .card-img-top {
+        filter: brightness(60%);
+    }
+
+    .card:hover .card-hover-overlay {
+        opacity: 1;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .card-text {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000000;
+        text-align: left;
+    }
+
+    .card-body {
+        position: relative;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    .card-body .btn {
+        position: absolute;
+        bottom: 12px;
+        right: 0;
+    }
+
+    .size-guide-link {
+        display: block;
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .size-guide-link:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .see-more-section {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .see-more-btn{
+        position: absolute;
+        top: -15px;
+        left: 50%;
+    }
+}
+
+/* Collaboration Section */
+.collaboration-section {
+
+    .collaboration-title {
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .text-warning {
+        color: #FFA500;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+    .collaboration-content {
+        flex: 1;
+    }
+
+    .collaboration-image {
+        max-width: 130px;
+        margin-left: 6.5rem;
+    }
+
+    .collaboration-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .collab-image-wrapper {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .collab-overlay {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        transform: rotate(-15deg);
+        background-color: #ffa500cc;
+        color: #000000;
+        padding: 60px 40px;
+        border-radius: 50%;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .countdown-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('images/exclusive-bg.webp');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .countdown-card h1 {
+        font-weight: 700;
+    }
+
+    .countdown-timer {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .countdown-timer span:nth-child(2),
+    .countdown-timer span:nth-child(3) {
+        color: #FFA500;
+    }
+
+    .countdown-days,
+    .countdown-hours {
+        font-size: 28px;
+        display: block;
+    }
+
+    .countdown-card button,
+    .countdown-card a {
+        font-size: 16px;
+    }
+
+    .countdown-card button {
+        margin-right: 10px;
+        text-align: center;
+        padding: 15px 40px;
+    }
+}
+
+.best-seller-section {
+    margin-top: 50px;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .small-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .card img {
+        height: 100%;
+        width: auto;
+        max-height: 200px;
+        max-width: 140px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    .card-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .rating {
+        font-size: 1rem;
+        color: #ffcc00;
+    }
+}
+
+.scroller {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.scroller div {
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+.shop-section {
+    position: relative;
+    background-image: url('images/exclusive-bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
+    border-radius: 30px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    .shop-title {
+        font-size: 42px;
+        font-weight: bold;
+        color: #FFA500;
+    }
+
+    .shop-description {
+        font-size: 16px;
+        color: white;
+        left: 20px;
+    }
+
+    .veson-logo {
+        color: #fff;
+    }
+
+    .veson-brand {
+        font-size: 28px;
+        font-weight: 300;
+        color: white;
+    }
+
+    .shop-input-group {
+        position: absolute;
+        bottom: 0px;
+        right: 140px;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        color: #fff;
+        padding: 5px;
+        height: 55px;
+    }
+
+    .shop-input-group input,
+    .shop-input-group input:hover {
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        width: 250px;
+    }
+
+    .shop-input-group .form-control::placeholder,
+    .shop-input-group .form-control::placeholder::after {
+        color: #fff;
+    }
+
+    .shop-input-group button,
+    .shop-input-group button:hover {
+        background-color: #fff;
+        color: #000000;
+        padding: 8px 12px;
+        font-size: 18px;
+        border: 1px solid #fff;
+        transform: rotate(-40deg);
+    }
+
+    .btn-light, .btn-light:hover, .btn-light::after {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 16px;
+        position: absolute;
+        bottom: 25px;
+    }
+}
+
+.footer-section {
+
+    .footer-logo {
+        font-size: 30px;
+    }
+
+    .footer-slogan {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #333;
+    }
+
+    .row p {
+        margin: 0;
+    }
+}
